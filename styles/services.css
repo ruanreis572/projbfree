@@ -1,0 +1,102 @@
+/* Estilizando a seção de serviços */
+#services {
+    background-color: #171717;
+    padding: 28px 8%;
+    border-bottom: solid 2px #d3e862;
+}
+
+/* Estilizando a tabela */
+table {
+    border-collapse: separate;
+    /* Separação das bordas das células */
+    border-spacing: 20px;
+    /* Espaçamento entre as células */
+}
+
+/* Adicionando estilo para o conteúdo dentro das células */
+.cell-content h2,
+.cell-content p {
+    margin-top: 0;
+    /* Remover margem superior padrão */
+}
+
+/* Estilizando as tabs */
+.tab1,
+.tab2,
+.tab3,
+.tab4 {
+    background-color: #222222;
+    padding: 40px;
+    border-radius: 20px;
+    transition: all 1s ease-in-out;
+}
+
+@media screen and (min-width:550px) {
+
+    /* Estilizando as células da tabela em telas maiores */
+    th,
+    td {
+        background-color: #222222;
+        width: 50%;
+        text-align: center;
+        border-radius: 20px;
+        transition: all 1s ease-in-out;
+
+        /* Efeito de hover nas células */
+        &:hover {
+            background-color: transparent;
+        }
+
+        /* Adicionando estilo para o conteúdo dentro das células */
+        .cell-content h2,
+        .cell-content p {
+            margin-top: 0;
+            /* Remover margem superior padrão */
+        }
+
+        /* Efeito de hover nas tabs em telas maiores */
+        .tab1:hover {
+            opacity: 90%;
+            transform: translate(50%, 50%) scale(1.7);
+        }
+
+        .tab2:hover {
+            opacity: 90%;
+            transform: translate(-50%, 50%) scale(1.7);
+        }
+
+        .tab3:hover {
+            opacity: 90%;
+            transform: translate(50%, -50%) scale(1.7);
+        }
+
+        .tab4:hover {
+            opacity: 90%;
+            transform: translate(-50%, -50%) scale(1.7);
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    /* Resetando as propriedades da tabela em telas menores */
+    table {
+        border-collapse: none;
+        border-spacing: 0;
+    }
+
+    /* Estilizando as células da tabela em telas menores */
+    th,
+    td {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    #services {
+        padding: 10px;
+        height: 100%;
+    }
+}

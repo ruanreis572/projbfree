@@ -1,0 +1,151 @@
+/* Importar fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Rubik+Mono+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Rubik+Mono+One&display=swap');
+
+
+/* Importar estilos de outros arquivos CSS */
+@import url(./header.css);
+@import url(./main.css);
+@import url(./services.css);
+@import url(./about.css);
+@import url(./faq.css);
+@import url(./footer.css);
+
+/* Estilos gerais */
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Estilos da imagem */
+img {
+    border-radius: 14px;
+    /* Bordas arredondadas */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+    /* Sombra leve */
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 45vw;
+}
+
+/* Estilo do logo*/
+.logo {
+    color: #e3edf8;
+    font-size: 40px;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    /* Animações suaves */
+}
+
+.logo:hover {
+    transform: scale(1.2);
+    /* Aumenta o tamanho do logotipo ao passar por cima */
+}
+
+/* Estilos dos botões */
+.btn-default {
+    background-color: #e3edf8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    width: 180px;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 2px #d3e862;
+    }
+}
+
+.btn-topo {
+    z-index: 999;
+    position: fixed;
+    border: none;
+    background-color: transparent;
+    color: #d3e862;
+    opacity: 50%;
+    padding: 10px;
+    font-size: 26px;
+    right: 5%;
+    bottom: 2.5%;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.texts {
+    padding: 20px;
+}
+
+.title {
+    font-family: "Oswald", sans-serif;
+    color: #d3e862;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-family: "PT Sans Narrow", sans-serif;
+    color: #e3edf8;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.subtitle {
+    color: #d3e862;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+span {
+    font-family: "PT Sans Narrow", sans-serif;
+    color: #e3edf8;
+}
+
+p {
+    font-family: "PT Sans Narrow", sans-serif;
+    color: #e3edf8;
+    text-align: center;
+}
+
+@media screen and (max-width:980px) {
+
+    .banner img {
+        width: 100%;
+    }
+
+    h2{
+        padding: 10px;
+    }
+}

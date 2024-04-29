@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>BFree</title>
+</head>
+
+<body>
+    <header id="topo">
+        <nav id="navbar">
+            <a href="#topo" class="logo" onclick="backToTop()">
+                <i class="fa-solid fa-file-code" id="nav_logo_footer"> BFREE</i>
+            </a>
+            <ul class="menu-list">
+                <ul id="nav_list">
+                    <li class="nav-item active">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq">FAQ</a>
+                    </li>
+                </ul>
+
+                <button id="contact-btn" class="btn-default"
+                    onclick="window.open('mailto:contact@bfree.com?subject=Learn%20more%20about')">Let's Talk</button>
+            </ul>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#faq">FAQ</a>
+                </li>
+            </ul>
+            <button id="contact-btn" class="btn-default"
+                onclick="window.open('mailto:contact@bfree.com?subject=Learn%20more%20about')">Let's Talk</button>
+        </div>
+    </header>
+    <main id="home">
+        <div class="interface">
+            <div class="texts">
+                <h1 class="title">Innovative App Development for Your Business<span>.</span></h1>
+                <p class="description">BFree is a premier app development powerhouse, dedicated to crafting bespoke app
+                    solutions tailored to fueling business expansion. With a seasoned team of industry experts, we
+                    provide an extensive array of services, ranging from cutting-edge app design and development to
+                    strategic UX consulting and seamless mobile integration.</p>
+                <p class="description">Our unwavering commitment lies in delivering top-tier products that not only meet
+                    but surpass your highest expectations, empowering you to maintain a competitive edge in today's
+                    dynamic market landscape. At BFree, innovation is our hallmark, and excellence is our standard.</p>
+            </div>
+        </div>
+    </main>
+
+    <section id="services">
+        <div class="interface">
+            <h1 class="title">Services we provide<span>.</span></h1>
+            <h2 class="description">Discover Our Diverse Range of Expert Services Crafted to Elevate Your Online
+                Presence
+            </h2>
+            <table>
+                <tr>
+                    <td>
+                        <div class="tab1 cell-content">
+                            <h2 class="subtitle">App Design</h2>
+                            <p>We design visually stunning and intuitive mobile applications that are tailored to your
+                                business needs and target audience, ensuring an engaging user experience and maximum
+                                user
+                                satisfaction.</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tab2 cell-content">
+                            <h2 class="subtitle">Mobile Development</h2>
+                            <p>We build high-performance and secure mobile applications for iOS and Android platforms,
+                                leveraging the latest technologies and best practices to ensure a seamless user
+                                experience.
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="tab3 cell-content">
+                            <h2 class="subtitle">UX Consulting</h2>
+                            <p>We provide expert advice and consultation on user experience design, usability, and
+                                accessibility, ensuring that your mobile application meets the highest standards of user
+                                experience and accessibility.
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tab4 cell-content">
+                            <h2 class="subtitle">App Marketing</h2>
+                            <p>Empowering your app's success, our App Marketing services leverage expert advice and
+                                consultation. We optimize user experience, usability, and accessibility, ensuring your
+                                app
+                                exceeds industry standards. Elevate your app's reach and impact with our tailored
+                                marketing
+                                solutions.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="interface">
+            <div class="texts">
+                <h1 class="title">About Us<span>.</span></h1>
+                <p class="description">At BFree, we're all about pushing the boundaries of app development. We create
+                    cutting-edge solutions that make users happy, boost businesses, and shake up industries. As a top
+                    app development company, we help businesses of any size succeed online. We're passionate about
+                    tech's power to connect people and ideas. Our goal? A future where digital tools are easy for
+                    everyone to use.</p>
+            </div>
+            <div class="banner">
+                <img src="./images/slide1.jpg" alt="" class="slideShow">
+                <img src="./images/slide2.jpg" alt="" class="slideShow">
+                <img src="./images/slide3.jpg" alt="" class="slideShow">
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="interface">
+            <h1 class="title">FAQ<span>.</span></h1>
+            <h2 class="description">Explore Our FAQs for Answers to Common Inquiries</h2>
+            <div class="faq-section">
+                <h3 onclick="toggleAnswer(this)">What are the main services offered by BFree?</h3>
+                <p class="answer">BFree offers a wide range of app development services, including custom app design and
+                    development, UX consulting, and mobile app development. Our team of experts is committed to
+                    delivering solutions that drive business growth for our clients.</p>
+
+                <h3 onclick="toggleAnswer(this)">What technologies does BFree use for app development?</h3>
+                <p class="answer">At BFree, we leverage the latest and most advanced technologies for app development.
+                    This includes programming languages such as Swift, Kotlin, and JavaScript, popular frameworks like
+                    React Native and Flutter, and state-of-the-art development tools to ensure the highest quality
+                    products.</p>
+
+                <h3 onclick="toggleAnswer(this)">How does BFree ensure the quality of its app development services?</h3>
+                <p class="answer">BFree maintains a rigorous quality assurance process throughout the app development
+                    lifecycle. We conduct thorough testing and reviews to ensure that our apps meet the highest
+                    standards of functionality, usability, and performance before they are deployed to our clients.</p>
+
+                <h3 onclick="toggleAnswer(this)">What is BFree's approach to UX consulting?</h3>
+                <p class="answer">BFree takes a user-centered approach to UX consulting, focusing on understanding the
+                    needs and preferences of our clients' target audience. We conduct research, create user personas,
+                    and develop intuitive user interfaces to ensure that the apps we design provide an exceptional user
+                    experience.</p>
+
+                <h3 onclick="toggleAnswer(this)">How can I get started with BFree's app development services?</h3>
+                <p class="answer">Getting started with BFree is easy! Simply contact us through our website or give us a
+                    call to discuss your app development needs. Our team will work closely with you to understand your
+                    requirements and provide a tailored solution that meets your business goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="interface">
+            <a href="#topo" class="logo" onclick="backToTop()">
+                <i class="fa-solid fa-file-code" id="nav_logo_footer" href="#topo"> BFREE</i>
+            </a>
+            <div class="footer-contact">
+                <a href="mailto:contact@bfree.com" class="mail-footer"><i class="fa-solid fa-envelope"></i>
+                    contact@bfree.com</a>
+                <a href="tel:+5551993396618"><i class="fa-solid fa-phone"></i> +55 51 993396618</a>
+            </div>
+            <div class="footer-bot">
+                <div class="social-btn">
+                    <a href="https://www.instagram.com" class="social-button instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.x.com" class="social-button twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com" class="social-button linkedin"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com" class="social-button youtube"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+                <p>&copy; Ruan Reis - Copyright 2024 BFree - All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src=" ./javascript/script.js">
+    </script>
+    <button class="btn-topo"><i class="fa-solid fa-house" onclick="backToTop()"></i></button>
+</body>
+
+</html>
